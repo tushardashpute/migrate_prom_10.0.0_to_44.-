@@ -5,7 +5,8 @@ Assumption:
 You have EKS cluster with max 1.21 and prometheus running on it.
 
 Problem Statement:
-Your current prometheus is having more memory consumption due to which you want to use S3 as a object store (thanos supports it) and you want to upgrade your cluster to 1.22, which current prometheus version is not supporting as it's older version which we can't directly upgrade.
+- Your current prometheus is having more memory consumption due to which you want to use S3 as a object store (thanos supports it) and you want to upgrade your cluster to 1.22, which current prometheus version is not supporting as it's older version which we can't directly upgrade.
+- We can't directly existing promtheus to new versino bcoz there are multiple breaking changes happend in between and it's supporting current cluster version too.
 
 Steps
 =====
